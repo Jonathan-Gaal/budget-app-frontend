@@ -2,10 +2,36 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: monospace;
 }
 
-h1 {
-  text-align: center;
+.navBar{
+  display: grid;
+  grid-template-columns: 2fr .5fr 1fr .5fr;
+  width: 100vw;
+  height: 20vh;
+  background-color: blue;
+  color: white;
+  justify-content: center;
+
+  
+}
+
+.navBar a{
+  color: white;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+
+
+
+.navBar h1 {
+ margin-left: 10%;
+  margin-top: auto;
+    margin-bottom: auto;
 }
 
 
