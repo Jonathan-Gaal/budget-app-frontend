@@ -26,15 +26,17 @@ body {
 
 }
 
-.Home {
+.Home, .Show {
   text-align: center;
 }
+
+
 
 .Transactions{
   text-align: center;
 }
 
-.transaction {
+.transaction, .Transaction {
   margin-left: 10%;
   margin-right: 10%;
   border: 2px solid rgb(27, 96, 179);
@@ -54,9 +56,14 @@ body {
 }
 
 
-#transactionDetails{
-  margin-left: 5%;
+#transactionDetails, #transactionFullDetails{
+  margin-left: 10%;
+  margin-right: 10%;
   color: white;
+  background-color: rgb(27, 96, 179) ;
+  padding: 2%;
+  border-radius: 10px;
+  text-align: left;
 }
 
 .navBar h1 {
