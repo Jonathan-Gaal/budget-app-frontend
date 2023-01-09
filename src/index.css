@@ -3,6 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: monospace;
+ 
 }
 
 .navBar{
@@ -10,7 +11,7 @@ body {
   grid-template-columns: 2fr .5fr 1fr .5fr;
   width: 100vw;
   height: 20vh;
-  background-color: blue;
+  background-color: rgb(27, 96, 179);
   color: white;
   justify-content: center;
 
@@ -25,8 +26,38 @@ body {
 
 }
 
+.Home {
+  text-align: center;
+}
+
+.Transactions{
+  text-align: center;
+}
+
+.transaction {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid rgb(27, 96, 179);
+  border-radius: 10px;
+  background-color: rgb(27, 96, 179) ;
+  text-align: left;
+  
+}
 
 
+.transaction a {
+  text-decoration: none;
+}
+
+.transaction a:hover{
+  color: blue;
+}
+
+
+#transactionDetails{
+  margin-left: 5%;
+  color: white;
+}
 
 .navBar h1 {
  margin-left: 10%;
