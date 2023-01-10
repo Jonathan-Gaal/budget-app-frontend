@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 2fr .5fr .5fr .5fr;
     width: 100vw;
-    height: 20vh;
-    margin-bottom: 4%;
+    height: 15vh;
+    margin-bottom: 5%;
     background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
     color: white;
     justify-content: center;

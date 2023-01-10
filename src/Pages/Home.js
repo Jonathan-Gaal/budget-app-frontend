@@ -1,9 +1,13 @@
+import Welcome from "../Components/Welcome";
+
 const Home = () => {
   return (
-    <main className="Home">
-      <h2>Welcome to the Budget App!</h2>
-      <img id="mainImg"></img>
-    </main>
+    <div>
+      <main className="Home">
+        <h1>Welcome!</h1>
+      </main>
+      <Welcome />
+    </div>
   );
 };
 
