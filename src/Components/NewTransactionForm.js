@@ -30,7 +30,9 @@ const NewTransactionForm = () => {
     e.preventDefault();
     axios
       .post(`${API}/transactions`, newTransaction)
-      .then(() => navigate("/transactions"))
+      .then(() => {
+        navigate("/transactions");
+      })
       .catch((err) => console.error(err));
     setNewTransaction({
       item_name: "",
