@@ -36,7 +36,6 @@ const NewTransactionForm = () => {
       })
       .catch((err) => {
         console.error(err);
-        navigate("/not-found");
       });
     // setNewTransaction({
     //   item_name: "",
