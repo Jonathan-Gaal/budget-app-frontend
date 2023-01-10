@@ -6,7 +6,7 @@ const API = process.env.REACT_APP_API_URL;
 
 const TransactionDetails = () => {
   const [transaction, setTransaction] = useState([]);
-  const { index } = useParams();
+  let { index } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const TransactionDetails = () => {
         <Link to="/transactions">
           <button id="btnBack">Back</button>
         </Link>
-        <Link>
+        <Link to={`/transactions/${index}/edit`}>
           <button id="btnEdit">Edit</button>
         </Link>
         <Link>
