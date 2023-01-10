@@ -1,6 +1,6 @@
 .navBar {
     display: grid;
-    grid-template-columns: 2fr .5fr 1fr .5fr;
+    grid-template-columns: 2fr .5fr .5fr .5fr;
     width: 100vw;
     height: 20vh;
     background-color: rgb(27, 96, 179);
