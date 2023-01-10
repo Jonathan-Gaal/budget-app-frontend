@@ -30,7 +30,7 @@ const NewTransactionForm = () => {
     e.preventDefault();
     axios
       .post(`${API}/transactions`, newTransaction)
-      .then(() => {
+      .then((res) => {
         window.alert("Item successfully created.");
         navigate("/transactions");
       })
