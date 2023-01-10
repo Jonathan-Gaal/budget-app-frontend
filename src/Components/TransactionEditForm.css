@@ -16,7 +16,7 @@ width: 70%;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    background-color: rgb(27, 96, 179);
+    background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
     padding: 2%;
     border-radius: 20px;
     text-align: center;
