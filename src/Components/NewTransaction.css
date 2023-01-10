@@ -34,5 +34,18 @@ input {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+.NewTransaction{
+    width: 90%;
+    
+}
+ label {
+     font-size: 1rem;
+ }
+
+}
+
+
+
 
 

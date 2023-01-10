@@ -29,3 +29,19 @@ width: 70%;
     margin-top: 5%;
     border-radius: 10px;
 }
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .EditedTransaction {
+        width: 90%;
+    }
+
+        label{
+            font-size: 1rem;
+        }
+
+}
