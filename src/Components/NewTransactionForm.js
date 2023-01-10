@@ -57,10 +57,10 @@ const NewTransactionForm = () => {
             onChange={handleNumChange}></input>
         </label>
 
-        <label htmlFor="date">Date: MM/DD/YYYY: </label>
+        <label htmlFor="date">Date: </label>
 
         <input
-          type="text"
+          type="date"
           id="date"
           value={newTransaction.date}
           required
