@@ -20,7 +20,10 @@ const NewTransactionForm = () => {
   };
 
   const handleNumChange = (e) => {
-    setNewTransaction({ ...newTransaction, amount: Number(e.target.value) });
+    setNewTransaction({
+      ...newTransaction,
+      amount: Number(e.target.value),
+    });
   };
 
   const handleSubmit = (e) => {

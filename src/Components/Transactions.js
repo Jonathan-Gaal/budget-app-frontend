@@ -9,7 +9,7 @@ const Index = () => {
 
   const calculatedTotal = transactions.reduce(
     (initialBalance, transaction) => (initialBalance += transaction.amount),
-    5000
+    900
   );
 
   useEffect(() => {
@@ -21,9 +21,27 @@ const Index = () => {
       });
   }, []);
 
+  const totalDisplayColor = (calculatedTotal) => {
+    if (calculatedTotal < 0) {
+      return <h2 className="insolvent">Total Balance: $ {calculatedTotal}</h2>;
+    }
+    if (calculatedTotal > 0 && calculatedTotal < 1000) {
+      return <h2 className="solvent">Total Balance: $ {calculatedTotal}</h2>;
+    }
+  };
+
   return (
     <div className="Transactions">
-      <h2>Total Balance: ${calculatedTotal}</h2>
+      {calculatedTotal < 0 && (
+        <h2 style={{ color: "red" }}>{calculatedTotal}</h2>
+      )}
+      {calculatedTotal > 0 && calculatedTotal < 1000 && (
+        <h2 style={{ color: "black" }}>{calculatedTotal}</h2>
+      )}
+      {calculatedTotal > 1000 && (
+        <h2 style={{ color: "green" }}>{calculatedTotal}</h2>
+      )}
+
       {transactions.map((transaction, index) => {
         return (
           <Transaction
