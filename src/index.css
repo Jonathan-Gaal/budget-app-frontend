@@ -43,6 +43,8 @@ a:hover {
 }
 
 .WelcomeImg {
+  width: 90%;
+    height: 30%;
   border-radius: 25%;
   border: ridge rgb(40, 140, 187) 5px;
   box-shadow: 10px 10px 10px 10px GREY;
@@ -50,13 +52,13 @@ a:hover {
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .WelcomeImg{
    width: 80%;
    height: 20%;
   }
 
-}
+} */
 
 
 
