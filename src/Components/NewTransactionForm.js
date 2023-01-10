@@ -37,13 +37,6 @@ const NewTransactionForm = () => {
       .catch((err) => {
         console.error(err);
       });
-    // setNewTransaction({
-    //   item_name: "",
-    //   amount: 0,
-    //   date: "",
-    //   from: "",
-    //   category: "",
-    // });
   };
 
   return (
