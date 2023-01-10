@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./TransactionDetails.css";
 const API = process.env.REACT_APP_API_URL;
 
 const TransactionDetails = () => {
@@ -26,6 +27,15 @@ const TransactionDetails = () => {
           <strong>Amount: $</strong>
           {transaction.amount}
         </h3>
+        <Link to="/transactions">
+          <button id="btnBack">Back</button>
+        </Link>
+        <Link>
+          <button id="btnEdit">Edit</button>
+        </Link>
+        <Link>
+          <button id="btnDelete">Delete</button>
+        </Link>
       </section>
     </div>
   );

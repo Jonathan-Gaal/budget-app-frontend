@@ -6,70 +6,20 @@ body {
  
 }
 
-.navBar{
-  display: grid;
-  grid-template-columns: 2fr .5fr 1fr .5fr;
-  width: 100vw;
-  height: 20vh;
-  background-color: rgb(27, 96, 179);
-  color: white;
-  justify-content: center;
 
-  
-}
-
-.navBar a{
-  color: white;
-  text-decoration: none;
-  margin-top: auto;
-  margin-bottom: auto;
-
-}
-
-.Home, .Show {
+.Home, .Show, .Transactions {
   text-align: center;
 }
 
 
 
-.Transactions{
-  text-align: center;
-}
-
-.transaction, .Transaction {
-  margin-left: 10%;
-  margin-right: 10%;
-  border: 2px solid rgb(27, 96, 179);
-  border-radius: 10px;
-  background-color: rgb(27, 96, 179) ;
-  text-align: left;
-  
-}
 
 
-.transaction a {
-  text-decoration: none;
-}
-
-.transaction a:hover{
-  color: blue;
-}
 
 
-#transactionDetails, #transactionFullDetails{
-  margin-left: 10%;
-  margin-right: 10%;
-  color: white;
-  background-color: rgb(27, 96, 179) ;
-  padding: 2%;
-  border-radius: 10px;
-  text-align: left;
-}
 
-.navBar h1 {
- margin-left: 10%;
-  margin-top: auto;
-    margin-bottom: auto;
-}
+
+
+
 
 

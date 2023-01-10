@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "./Transaction.css";
 const Transaction = ({ transaction, index }) => {
   return (
     <div className="transaction">

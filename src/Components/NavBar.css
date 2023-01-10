@@ -1,0 +1,25 @@
+.navBar {
+    display: grid;
+    grid-template-columns: 2fr .5fr 1fr .5fr;
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(27, 96, 179);
+    color: white;
+    justify-content: center;
+
+
+}
+
+.navBar h1 {
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}

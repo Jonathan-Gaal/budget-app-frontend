@@ -1,0 +1,9 @@
+#transactionFullDetails {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    background-color: rgb(27, 96, 179);
+    padding: 2%;
+    border-radius: 10px;
+    text-align: left;
+}
