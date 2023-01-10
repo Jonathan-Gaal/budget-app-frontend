@@ -5,7 +5,7 @@ import "./NewTransaction.css";
 const API = process.env.REACT_APP_API_URL;
 
 const NewTransactionForm = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [newTransaction, setNewTransaction] = useState({
     item_name: "",
@@ -31,8 +31,8 @@ const NewTransactionForm = () => {
     axios
       .post(`${API}/transactions`, newTransaction)
       .then(() => {
-        navigate("/transactions");
         window.alert("Item successfully created.");
+        navigate("/transactions");
       })
       .catch((err) => {
         console.error(err);
