@@ -32,6 +32,7 @@ const NewTransactionForm = () => {
       .post(`${API}/transactions`, newTransaction)
       .then(() => {
         navigate("/transactions");
+        window.alert("Log successfully created.");
       })
       .catch((err) => console.error(err));
     setNewTransaction({
