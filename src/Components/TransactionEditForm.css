@@ -1,6 +1,6 @@
 input {
     display: block;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
@@ -8,22 +8,22 @@ input {
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px BLACK;
     text-align: center;
+    padding: 1%;
 }
 
 .EditedTransaction {
-    width: 40%;
+width: 70%;
     margin-left: auto;
     margin-right: auto;
     color: white;
     background-color: rgb(27, 96, 179);
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 7px 7px 7px 7px GREY;
-
+    padding: 1%;
+    padding-top: 2%;
 }
-
-
 
 #btnSubmit {
     margin-top: 5%;

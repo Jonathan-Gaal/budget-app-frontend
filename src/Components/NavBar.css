@@ -3,15 +3,18 @@
     grid-template-columns: 2fr .5fr .5fr .5fr;
     width: 100vw;
     height: 20vh;
+    margin-bottom: 4%;
     background-color: rgb(27, 96, 179);
     color: white;
     justify-content: center;
+    text-align: left;
+    box-shadow: 7px 7px 7px 7px GREY;
 
 
 }
 
 .navBar h1 {
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: auto;
     margin-bottom: auto;
 }

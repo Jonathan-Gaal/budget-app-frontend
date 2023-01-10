@@ -5,16 +5,14 @@
     box-shadow: 7px 7px 7px 7px GREY;
     border-radius: 20px;
     
+    
 }
 
 #transactionFullDetails {
 border-radius: 20px;
     color: white;
     background-color: rgb(27, 96, 179);
-    padding: 2%;
-   
-    text-align: left;
-    
+    padding: 5%;
 }
 
 button {

@@ -3,6 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: monospace;
+  text-align: center;
  
 }
 
@@ -12,9 +13,13 @@ body {
 }
 
 
+a {font-weight: bold;}
 
 
 
+a:hover {
+  cursor: pointer;
+}
 
 
 
