@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Index from "./Components/Transactions";
 import Show from "./Pages/Show";
 import FourOFour from "./Pages/Four0Four";
+import New from "./Pages/New";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/transactions" element={<Index />} />
             <Route path="/transactions/:index" element={<Show />} />
+            <Route path="/transactions/new" element={<New />} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>

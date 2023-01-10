@@ -16,6 +16,19 @@ const TransactionDetails = () => {
       .catch((err) => console.error(err));
   }, [index, navigate]);
 
+  const deleteTransaction = () => {
+    axios
+      .delete(`${API}/transactions/${index}`)
+      .then(() => {
+        navigate("/transactions");
+        window.alert("Log successfully deleted.");
+      })
+      .catch((err) => {
+        console.error(err);
+        window.alert("Error, log not deleted.");
+      });
+  };
+
   return (
     <div className="TransactionDetails">
       <section id="transactionFullDetails">
@@ -34,7 +47,9 @@ const TransactionDetails = () => {
           <button id="btnEdit">Edit</button>
         </Link>
         <Link>
-          <button id="btnDelete">Delete</button>
+          <button id="btnDelete" onClick={deleteTransaction}>
+            Delete
+          </button>
         </Link>
       </section>
     </div>
