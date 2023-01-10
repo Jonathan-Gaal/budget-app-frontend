@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav className="navBar">
       <h1>Budget App</h1>
       <Link to="/">Home</Link>
-      <Link to="/transactions">Transactions</Link>
+      <Link to="/transactions">Items</Link>
       <Link to="/transactions/new">New</Link>
     </nav>
   );
