@@ -21,25 +21,16 @@ const Index = () => {
       });
   }, []);
 
-  const totalDisplayColor = (calculatedTotal) => {
-    if (calculatedTotal < 0) {
-      return <h2 className="insolvent">Total Balance: $ {calculatedTotal}</h2>;
-    }
-    if (calculatedTotal > 0 && calculatedTotal < 1000) {
-      return <h2 className="solvent">Total Balance: $ {calculatedTotal}</h2>;
-    }
-  };
-
   return (
     <div className="Transactions">
       {calculatedTotal < 0 && (
-        <h2 style={{ color: "red" }}>{calculatedTotal}</h2>
+        <h2 style={{ color: "red" }}>Total Balance: $ {calculatedTotal}</h2>
       )}
       {calculatedTotal > 0 && calculatedTotal < 1000 && (
-        <h2 style={{ color: "black" }}>{calculatedTotal}</h2>
+        <h2 style={{ color: "black" }}>Total Balance: $ {calculatedTotal}</h2>
       )}
       {calculatedTotal > 1000 && (
-        <h2 style={{ color: "green" }}>{calculatedTotal}</h2>
+        <h2 style={{ color: "green" }}>Total Balance: $ {calculatedTotal}</h2>
       )}
 
       {transactions.map((transaction, index) => {
