@@ -21,3 +21,7 @@
   box-shadow: 7px 7px 7px 7px grey;
 }
 
+#transactionDetails:hover{
+  color: blue;
+}
+

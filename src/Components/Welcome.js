@@ -1,8 +1,11 @@
 const Welcome = () => {
   return (
-    <div className="Welcome">
+    <div>
       <section>
-        <img src={"../assets/homeImg.jpg"} id="mainImg"></img>
+        <img
+          src={"/assets/homeImg.jpg"}
+          id="mainImg"
+          className="WelcomeImg"></img>
       </section>
     </div>
   );

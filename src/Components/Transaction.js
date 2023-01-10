@@ -4,7 +4,9 @@ const Transaction = ({ transaction, index }) => {
   return (
     <div className="transaction">
       <Link to={`/transactions/${index}`}>
-        <section id="transactionDetails">
+        <section
+          id="transactionDetails"
+          style={{ ":hover": { color: "blue" } }}>
           <h3>{transaction.item_name}</h3>
 
           <h3>Date: {transaction.date}</h3>
