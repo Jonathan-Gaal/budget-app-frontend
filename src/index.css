@@ -46,11 +46,14 @@ a:hover {
   border-radius: 25%;
   border: ridge rgb(40, 140, 187) 5px;
   box-shadow: 10px 10px 10px 10px GREY;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {
   .WelcomeImg{
-   object-fit: cover; 
+   width: 80%;
+   height: 20%;
   }
 
 }
