@@ -28,9 +28,12 @@ const NewTransactionForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${API}/transactions`, newTransaction).catch((err) => {
-      console.error(err);
-    });
+    axios
+      .post(`${API}/transactions`, newTransaction)
+      .then(() => window.alert("hello"))
+      .catch((err) => {
+        console.error(err);
+      });
   };
 
   return (
