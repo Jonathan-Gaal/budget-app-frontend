@@ -52,13 +52,9 @@ a:hover {
   margin-left: auto;
 }
 
-/* @media screen and (max-width: 768px) {
-  .WelcomeImg{
-   width: 80%;
-   height: 20%;
-  }
-
-} */
+button:hover {
+  color: blue;
+}
 
 
 
