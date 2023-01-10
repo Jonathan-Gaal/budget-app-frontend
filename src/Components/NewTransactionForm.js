@@ -28,15 +28,9 @@ const NewTransactionForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post(`${API}/transactions`, newTransaction)
-      .then((res) => {
-        window.alert("Item successfully created.");
-        navigate("/transactions");
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+    axios.post(`${API}/transactions`, newTransaction).catch((err) => {
+      console.error(err);
+    });
   };
 
   return (
