@@ -32,16 +32,19 @@ const NewTransactionForm = () => {
       .post(`${API}/transactions`, newTransaction)
       .then(() => {
         navigate("/transactions");
-        window.alert("Log successfully created.");
+        window.alert("Item successfully created.");
       })
-      .catch((err) => console.error(err));
-    setNewTransaction({
-      item_name: "",
-      amount: 0,
-      date: "",
-      from: "",
-      category: "",
-    });
+      .catch((err) => {
+        console.error(err);
+        navigate("/not-found");
+      });
+    // setNewTransaction({
+    //   item_name: "",
+    //   amount: 0,
+    //   date: "",
+    //   from: "",
+    //   category: "",
+    // });
   };
 
   return (

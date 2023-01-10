@@ -19,7 +19,7 @@ const App = () => {
             <Route path="/transactions/:index" element={<Show />} />
             <Route path="/transactions/new" element={<New />} />
             <Route path="/transactions/:index/edit" element={<Edit />} />
-            <Route path="*" element={<FourOFour />} />
+            <Route path="/not-found" element={<FourOFour />} />
           </Routes>
         </main>
       </Router>

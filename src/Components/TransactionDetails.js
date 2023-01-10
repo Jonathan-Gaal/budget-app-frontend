@@ -21,7 +21,7 @@ const TransactionDetails = () => {
       .delete(`${API}/transactions/${index}`)
       .then(() => {
         navigate("/transactions");
-        window.alert("Log successfully deleted.");
+        window.alert("Item successfully deleted.");
       })
       .catch((err) => {
         console.error(err);
