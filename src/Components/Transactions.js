@@ -24,13 +24,19 @@ const Index = () => {
   return (
     <div className="Transactions">
       {calculatedTotal < 0 && (
-        <h2 style={{ color: "red" }}>Total Balance: $ {calculatedTotal}</h2>
+        <h2 className="header" style={{ color: "red" }}>
+          Total Balance: $ {calculatedTotal}
+        </h2>
       )}
       {calculatedTotal > 0 && calculatedTotal < 1000 && (
-        <h2 style={{ color: "black" }}>Total Balance: $ {calculatedTotal}</h2>
+        <h2 className="header" style={{ color: "white" }}>
+          Total Balance: $ {calculatedTotal}
+        </h2>
       )}
       {calculatedTotal > 1000 && (
-        <h2 style={{ color: "green" }}>Total Balance: $ {calculatedTotal}</h2>
+        <h2 className="header" style={{ color: "green" }}>
+          Total Balance: $ {calculatedTotal}
+        </h2>
       )}
 
       {transactions.map((transaction, index) => {

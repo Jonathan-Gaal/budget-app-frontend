@@ -1,7 +1,7 @@
 const FourOFour = () => {
   return (
     <div>
-      <h1>Sorry, no page found</h1>
+      <h1 className="header">Sorry, no page found</h1>
     </div>
   );
 };
