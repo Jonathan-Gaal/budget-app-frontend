@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { dateConvert } from "../helpers";
 import "./TransactionDetails.css";
 const API = process.env.REACT_APP_API_URL;
 
@@ -8,6 +9,7 @@ const TransactionDetails = () => {
   const [transaction, setTransaction] = useState([]);
   let { index } = useParams();
   const navigate = useNavigate();
+  let returnDate = "";
 
   useEffect(() => {
     axios
@@ -15,6 +17,8 @@ const TransactionDetails = () => {
       .then((res) => setTransaction(res.data))
       .catch((err) => console.error(err));
   }, [index, navigate]);
+
+  dateConvert(`${transaction.date}`);
 
   const deleteTransaction = () => {
     axios
@@ -35,7 +39,7 @@ const TransactionDetails = () => {
         <h3>{transaction.item_name}</h3>
         <h3>From: {transaction.from}</h3>
         <h3>Category: {transaction.category}</h3>
-        <h3>Date: {transaction.date}</h3>
+        <h3>Date: {dateConvert(`${transaction.date}`)}</h3>
         <h3>
           <strong>Amount: $</strong>
           {transaction.amount}
